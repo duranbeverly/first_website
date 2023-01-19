@@ -1,0 +1,231 @@
+/*We want the nav bar to span across the page with no margins to the side so we must override the original margin setting*/
+body {
+    margin: 0;
+
+}
+
+/*Background colors for every page*/
+html {
+    background-color: #A0A083;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*This is for the contact me button*/
+.contact {
+    background-color: #322E18;
+    color: #A0A083;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    border-width: 0;
+    width: 272px;
+    height: 68px;
+    padding: 12px, 32px;
+}
+
+.button_space {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 55px;
+    padding-top: 30px;
+}
+
+/*All things nav bar: removes the bullets and aligns everything evenly with space in between*/
+.nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 26px;
+}
+
+.nav {
+    background-color: #322E18;
+    height: 68px;
+    margin: 0;
+
+}
+
+.nav a {
+    color: #A0A083;
+    font-size: 36px;
+    text-decoration: none;
+    font-weight: 300;
+
+}
+
+.nav li {
+    padding: 12px 0;
+
+}
+
+/*The main header you see on each page is centered*/
+h1 {
+    font-size: 96px;
+    color: #322E18;
+    display: flex;
+    justify-content: center;
+    font-weight: 300;
+}
+
+/* This is so everything aligns with the main pictures set to 1196px*/
+.sbody {
+    width: 1196px;
+}
+
+/*This is so we can get career updates and hobby updates on the same line*/
+.row {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+/*Ensure the community section in main page has space between it and the div above*/
+.community_section {
+    padding-top: 35px;
+}
+
+/*adjusts the subheaders to correct font and space*/
+h2 {
+    font-size: 36px;
+    color: #322E18;
+    padding-bottom: 18px;
+    margin-bottom: 0;
+
+}
+
+/*adjusts the paragraphs to correct font and space*/
+p {
+    color: #322E18;
+    font-size: 24px;
+    margin-top: 0;
+}
+
+/*In Code page this adjusts links to not be underlined and have correct color*/
+.table a {
+    text-decoration: none;
+    color: #322E18;
+}
+
+/*In Code page this makes the bullets be squares*/
+.table li {
+    color: #322E18;
+    list-style-type: square;
+}
+
+/*Making a form with a rounder border*/
+form {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 491px;
+    padding: 1px;
+    border: 1px solid #7e785b;
+    border-radius: 1em;
+
+}
+
+/*Makes it so the subheader in the form is above the input fields*/
+.fieldsetbox {
+    display: flex;
+    border: none;
+    flex-direction: column;
+
+}
+
+/*Lightens the font weight*/
+form h2 {
+    font-weight: 400;
+}
+
+/*Makes sure the label and inputs are one on top of the other*/
+.innerbox div {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15px;
+
+}
+
+/*Input field styling*/
+.innerbox input {
+    border: none;
+    height: 25px;
+    background-color: #DBDBCB;
+}
+
+.innerbox textarea {
+    border: none;
+    height: 51px;
+    background-color: #DBDBCB;
+
+}
+
+/*Styling for the button inside form and centering inside form*/
+.innerbox button {
+    background-color: #322E18;
+    color: #A0A083;
+    height: 48px;
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    width: 246px;
+    align-self: center;
+
+}
+
+.button {
+    padding-top: 15px;
+}
+
+/*Fixing the checkbox at the bottom and labels of the Community page*/
+.check {
+    display: flex;
+    align-items: center;
+
+}
+
+.innerbox label {
+    font-size: 24px;
+    color: #322E18;
+}
+
+.check input {
+    width: 20px;
+}
+
+.check label {
+    font-size: 20px;
+}
+
+/*Centers the page*/
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+/*Creates a grid for the hobbies page to display photos*/
+.board {
+    width: 711px;
+    height: 560px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 0 auto;
+    padding-bottom: 21px;
+
+}
+
+.board label {
+    display: flex;
+    justify-content: center;
+    color: #322E18;
+}
+
+/*This was supposed to shrink the screen for smaller screen but it does not work*/
+@media (max-width: 600px) {
+    .sbody {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
